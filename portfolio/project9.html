@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scaleable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Title</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html" class="name">
+          Kiru
+        </a>
+      </div>
+      <div class="header-menu">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#portfolio-section">Portfolio</a>
+        <a href="../index.html#experience-section">Experience</a>
+        <a href="../index.html#blog-section">Blog</a>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="../index.html" class="navigation__link"
+              ><span>01</span>Home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../index.html#services-section" class="navigation__link"
+              ><span>02</span>Services</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../index.html#portfolio-section" class="navigation__link"
+              ><span>03</span>Portfolio</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../index.html#experience-section" class="navigation__link"
+              ><span>04</span>Experience</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../index.html#blog-section" class="navigation__link"
+              ><span>05</span>Blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main id="portfolio-projects">
+      <section class="container casestudywrapper">
+        <div class="headercontainer">
+          <div class="project-image" id="babyviceimgcover">
+            <div
+              class="img"
+              style="background: url(../img/newbabyvicelogo.PNG);"
+            ></div>
+          </div>
+          <div class="project-headerdescription">
+            <h1>BabyVice</h1>
+            <div class="info">
+              <div class="buttons">
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/file/8rUovIwTIPsiUdqcRlPunX/BabyVice-Final?node-id=0%3A1"
+                  ><i class="fas fa-desktop"></i>&#160; View Prototype</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bodycontent">
+          <h4>Project Overview</h4>
+          <p>
+            BabyVice is an app that helps new parents become outstanding
+            parents. I worked in a team to design a platform where parents can
+            gain insight into their baby’s maturation process, keep track of
+            their baby’s changes and are alerted of upcoming milestones and
+            checkups. Users can also share their progress by interacting with
+            the community along with other new parents.
+          </p>
+          <h4>Problem Statement</h4>
+          <p>
+            New parents are often ill prepared for the difficulties of raising a
+            child. Being a parent can be a challenge and keeping up on their
+            baby’s developmental stages is a priority for most. New parents have
+            access to overwhelming amounts of information from numerous sources,
+            yet most of which can be conflicting and unreliable.
+          </p>
+          <h4>User Research and Needfinding</h4>
+          <p>
+            The demographic that we targeted for research were new parents in
+            online discussion forums. A survey was created to assess the type of
+            needs our stakeholders had to voice. We found that new parents are
+            ill informed going through the maturation process of their baby. The
+            following needs reflect the inputs received from users in baby
+            parenting facebook groups:
+          </p>
+          <div class="needfind">
+            <ul>
+              <li>Track developmental stage with realistic milestones</li>
+              <li>
+                Suggested Activities/Resources to exceed baby’s developmental
+                milestone
+              </li>
+              <li>Communicate with other new parents</li>
+            </ul>
+          </div>
+
+          <p>
+            The following persona illustrates the goals and desires of our
+            target audience.
+          </p>
+          <img
+            id="personaimg"
+            src="../img/babyvicepersona.jpg"
+            alt="Persona 1"
+          />
+          <h4>Storyboard</h4>
+          <img
+            id="babyviceStoryboard"
+            src="../img/babyvicestoryboard.png"
+            alt="Babyvice Storyboard"
+          />
+          <p>
+            Living in a big city oftens makes her feel isolated and she’s tired
+            of constantly calling her doctor and friends for baby advice.
+            Danielle wants to have an app which can connect her to the other new
+            parents in her area so they can exchange baby tips.
+          </p>
+          <div class="hifiprototype">
+            <h4>Paper Prototype of BabyVice</h4>
+            <img
+              id="babyviceFlow"
+              src="../img/babyviceflow.jpg"
+              alt="BabyVice Flow"
+            />
+            <p>
+              The first screen that users are met with upon profile creation.
+              Having them indicate their baby’s age is crucial to customizing
+              the type of information and developmental milestones the user
+              sees.
+            </p>
+            <div class="flowbox">
+              <img src="../img/babyviceflow2.png" alt="BabyVice Flow 2" />
+              <div class="contentbox">
+                <p>
+                  After profile creation, users can visit the growth and
+                  development milestone tracker, which suggests information
+                  relevant to the baby’s current development.
+                </p>
+                <p>
+                  This platform bridges the communication gap that new parents
+                  experience during the maturation of their baby. Users have
+                  access to discussions with other parents, along with expert
+                  advice, and informational content detailing the expected
+                  experience of baby raising during the specific developmental
+                  period.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="usertesting">
+            <h4>User Testing</h4>
+            <p>
+              During our user testing stage, we showed our digital prototype to
+              stakeholders that resonate with the user persona.The goal was to
+              identify any major usability issues with our UI and specific needs
+              that can be addressed prior to developing higher-fidelity
+              prototypes. The following are key takeaways after testing the
+              digital prototype:
+            </p>
+            <ul>
+              <li>
+                <b>More distinct categories:</b>
+                The current categories we had (health, engagement, nutrition,
+                sleep), were crucial to maintaining a baby’s growth but parents
+                were looking for ways to further exceed developmental milestones
+                and nurture their child in new ways.
+              </li>
+              <li>
+                <b>Easy Access to Community Discussions:</b>
+                Users found it simple to post a question about a community
+                resource and expressed interest to further interact with other
+                users through commenting.
+              </li>
+              <li>
+                <b>Way to track baby’s health/vitals:</b>
+                New parents also showed interest with a UI screen representing
+                the baby’s vitals and daily schedule over time. This allows them
+                to record the notable interactions they have with their baby.
+              </li>
+            </ul>
+          </div>
+          <div id="hifiprototype">
+            <h4>High-Fidelity Prototype</h4>
+            <img
+              src="../img/babyvicehifi.PNG"
+              alt="High Fidelity Prototype"
+              style="float: left;"
+            />
+            <img src="../img/babyvicehifi2.PNG" alt="High Fidelity Prototype" />
+          </div>
+          <h4>Reflection</h4>
+          <p>
+            In the end, my team was able to design a platform for new parents to
+            track and gain insight into their baby’s maturation process. We also
+            presented our project to our COGS 187A Usability and Information
+            Architecture class. In hindsight, I was able to experience the work
+            of a UI/UX designer while iterating through the design stages. I’ve
+            begun to understand the challenges that designers are faced with in
+            creating a novel experience while meeting the goals of users and
+            other stakeholders.
+          </p>
+          <img
+            id="babyvice"
+            class="babyvicefinalimg"
+            src="../img/babyvicecover.PNG"
+            alt="Photospace Cover"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-container">
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-medium"></i>
+        </a>
+      </div>
+      <h5>Kirubel Girma</h5>
+      <h6>Web Developer | Designer | Machine Learning</h6>
+    </footer>
+  </body>
+</html>

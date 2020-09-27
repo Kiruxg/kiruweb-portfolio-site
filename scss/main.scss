@@ -1,0 +1,114 @@
+@import 'navigation.scss';
+@import 'top-section.scss';
+@import 'portfolio-projects.scss';
+@import 'services-section.scss';
+@import 'portfolio-section.scss';
+@import 'experience-section.scss';
+@import 'blog-section.scss';
+@import 'testimonial-section.scss';
+@import 'footer-section.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+body {}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+header .logo .name{
+     background: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+}
+
+header .header-menu {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .header-menu a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+
+}
+
+header .header-menu a:hover {
+    font-weight: 600;
+    color: #ff5253;
+}
+header .menu-btn {
+    font-weight: 600;
+    color: #ff5253;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 2rem;
+    display: none;
+}
+
+ .navigation{
+        display: none;
+    }
+#about-section .title{
+    font-size: 2.5rem;
+}
+#about-section p{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 14px;
+}
+@media only screen and (max-width: 960px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* phones */
+
+@media only screen and (max-width: 767px) {
+    header .header-menu {
+        display: none;
+    }
+    .navigation{
+        display: block;
+    }
+    header .logo {
+    font-size: 1.3rem;
+    padding: 10px 10px;
+}
+
+}

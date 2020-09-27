@@ -1,0 +1,61 @@
+footer {
+    background: #f9fafc;
+    padding: 60px 15px;
+}
+
+footer .social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+footer .social-container a {
+
+    font-size: 3rem;
+    color: #8e8f91;
+    text-decoration: none;
+    transition: all .3 ease-in-out;
+    display: inline-block;
+    padding: 10px;
+}
+
+footer .social-container a:hover {
+    color: #ff0000;
+}
+footer .social-container a:first-child:hover {
+    color: #3b5998;
+}
+footer .social-container a:nth-child(3):hover {
+    color: #0077b5;
+}
+footer .social-container a:last-child:hover {
+    color: black;
+}
+
+footer h5 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: black;
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer h6 {
+    font-size: .9rem;
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+}
+/* tablets */
+@media only screen and (max-width: 960px){
+    .container{
+        width: 100%;
+    }
+}
+/* phones */
+@media only screen and (max-width: 767px){
+    
+}

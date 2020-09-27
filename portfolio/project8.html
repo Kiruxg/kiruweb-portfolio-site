@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scaleable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Title</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html" class="name">
+          Kiru
+        </a>
+      </div>
+      <div class="header-menu">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#portfolio-section">Portfolio</a>
+        <a href="../index.html#experience-section">Experience</a>
+        <a href="../index.html#blog-section">Blog</a>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="../index.html" class="navigation__link"
+              ><span>01</span>Home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../index.html#services-section" class="navigation__link"
+              ><span>02</span>Services</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../index.html#portfolio-section" class="navigation__link"
+              ><span>03</span>Portfolio</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../index.html#experience-section" class="navigation__link"
+              ><span>04</span>Experience</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../index.html#blog-section" class="navigation__link"
+              ><span>05</span>Blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main id="portfolio-projects">
+      <section class="container casestudywrapper">
+        <div class="project-image" style="width: 100%;">
+          <div
+            class="img"
+            style="
+              background: url(../img/photospacecover.PNG);
+              height: 350px;
+              width: 100%;
+            "
+          ></div>
+        </div>
+        <h1>PhotoSpace</h1>
+        <div class="info">
+          <div class="buttons">
+            <a target="_blank" href="http://photospace.kiruweb.com/"
+              ><i class="fas fa-desktop"></i>&#160; View Project</a
+            >
+            <a target="_blank" href="https://github.com/Kiruxg/PhotoSpace">
+              <i class="fas fa-code"></i>&#160; View Code</a
+            >
+          </div>
+        </div>
+        <h4>Project Overview</h4>
+        <p>
+          Photospace is a freelance project that I’ve worked with a client to
+          research, design, and develop a website where photographers can
+          showcase their best work for potential clients. This web application
+          serves to connect professional photographers to clients looking for
+          quality prints. Photospace fosters a collaborative medium for
+          photographers to learn and network with other professionals by sharing
+          their experiences. Over the course of the project, I was responsible
+          for project planning, design, and the programming skills needed to
+          implement a working prototype.
+        </p>
+        <h4>Problem Statement</h4>
+        <p>
+          Photography is an extremely competitive field that requires talent,
+          skills, marketing, and discipline to distinguish oneself as a
+          professional photographer. Freelance creative professionals initially
+          struggle to get the clients and referrals they need to thrive in their
+          small businesses. Photographers early in their profession often lack
+          access to a network of other creatives that provide opportunities for
+          referrals and new ideas to occur.
+        </p>
+        <h4>User Research and Needfinding</h4>
+        <p>
+          The demographic I was targeting were business owners who are
+          professional photographers. I interviewed a freelance photographer and
+          he stressed that he was not attracting enough clients. The
+          photographer is slowly making their mark in their profession and wants
+          to collaborate with other creatives. Below are the most pertinent
+          needs that I have gathered from the interview:
+        </p>
+        <div class="needfind">
+          <ul>
+            <li>Book more clients</li>
+            <li>
+              Network with other creatives to share knowledge, camera gear
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          By considering the user needs, the goal is to design a platform for
+          professional photographers to interact with potential clients and
+          other freelancing creatives.
+        </p>
+        <img src="../img/Persona 1.png" alt="Persona 1" />
+        <h4>Low-Fidelity Prototypes</h4>
+        <p>
+          The second stakeholder to the platform is a user looking for
+          photography services. Once a user arrives on the front page, they can
+          browse for the type of services they are looking for, see profiles of
+          local freelancers near their area. Users also have the option to book
+          small business owners and connect with them in the business profile
+          area. Another top need that freelancers voiced was the desire to share
+          information and equipment with other business owners. By fostering a
+          collaborative blogging medium, creatives are encouraged to form a
+          healthy relationship and potentially acquire more referrals.
+        </p>
+        <div class="imgfloater">
+          <img src="../img/pic1.png" alt="lowfidelity1" style="float: left;" />
+          <img src="../img/pic2.png" alt="lowfidelity2" />
+        </div>
+        <div class="imgfloater">
+          <img src="../img/pic3.png" alt="lowfidelity3" style="float: left;" />
+          <img src="../img/pic4.png" alt="lowfidelity4" />
+        </div>
+        <h4>Reflection</h4>
+        <p>
+          The primary goal prior to beginning the programming phase was to
+          understand what features were most beneficial to my stakeholders.
+          Freelance photographers are looking to book more clients while having
+          a medium to network with other creatives to share knowledge and camera
+          equipment. The UI had to be simplistic and intuitive, and some
+          features that I felt was needed did not align with user goals. For
+          example, I decided that the ability to like/love a picture is not
+          conducive to the main purpose of PhotoSpace. Users seeking
+          photographer services can get a quick snapshot of each freelancer’s
+          specialties and book them in as little clicks as possible. The website
+          features a photo collection and testimonials for each business owner.
+          Professional photographers looking for connections can interact with
+          other freelancers, through the light blogging medium and comments area
+          which maintains engagement.
+        </p>
+        <p>
+          The BlogSpace is a medium for the business to provide commentary on
+          photography and another opportunity to connect with clients. The page
+          can allow the photographer to establish meaningful relationships with
+          existing clients and other freelancers looking to obtain knowledge.
+        </p>
+        <div class="imgfloater">
+          <img src="../img/pic5.jpg" alt="lowfidelity5" style="float: left;" />
+          <img src="../img/pic6.jpg" alt="lowfidelity6" />
+        </div>
+        <div class="imgfloater">
+          <img src="../img/pic7.jpg" alt="lowfidelity7" style="float: left;" />
+          <img src="../img/pic8.jpg" alt="lowfidelity8" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-container">
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-medium"></i>
+        </a>
+      </div>
+      <h5>Kirubel Girma</h5>
+      <h6>Web Developer | Designer | Machine Learning</h6>
+    </footer>
+  </body>
+</html>
