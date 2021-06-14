@@ -42,7 +42,7 @@
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     position: relative;
     transition: transform 0.2s; }
-    .portfolio-wrapper > div a {
+    .portfolio-wrapper > div .link {
       color: inherit;
       margin-left: 27px; }
     .portfolio-wrapper > div > div {
@@ -53,7 +53,7 @@
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.00938em;
-        min-height: 65px; }
+        min-height: 55px; }
       .portfolio-wrapper > div > div .text-secondary {
         margin: 30px auto 60px auto;
         color: rgba(0, 0, 0, 0.54);
@@ -70,6 +70,10 @@
     margin-bottom: 20px; }
   .portfolio-wrapper img {
     width: 100%;
+    max-height: 268px;
     object-fit: contain;
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    background-image: url("https://amazon.kiruweb.com/");
+    display: block; }

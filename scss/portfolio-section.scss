@@ -46,7 +46,7 @@
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     position: relative;
     transition: transform 0.2s;
-    a {
+    .link {
       color: inherit;
       margin-left: 27px;
     }
@@ -58,7 +58,7 @@
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.00938em;
-        min-height: 65px;
+        min-height: 55px;
       }
       .text-secondary {
         margin: 30px auto 60px auto;
@@ -82,9 +82,13 @@
   }
   img {
     width: 100%;
+    max-height: 268px;
     object-fit: contain;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    cursor: pointer;
+    background-image: url("https://amazon.kiruweb.com/");
+    display: block;
   }
   // .whatsapp-img {
   //   height: 268px;
