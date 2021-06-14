@@ -1,114 +1,191 @@
-@import 'navigation.scss';
-@import 'top-section.scss';
-@import 'portfolio-projects.scss';
-@import 'services-section.scss';
-@import 'portfolio-section.scss';
-@import 'experience-section.scss';
-@import 'blog-section.scss';
-@import 'testimonial-section.scss';
-@import 'footer-section.scss';
+@import "top-section.scss";
+@import "portfolio-section.scss";
+@import "experience-section.scss";
+@import "contact-section.scss";
+@import "footer-section.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
 }
 
-body {}
-
 .container {
-    max-width: 1150px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
 }
-header .logo .name{
-     background: black;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: white;
+header .logo .name {
+  background: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
 }
 header .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
-    display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
 }
 
 header .header-menu {
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header .header-menu a {
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    padding: 0 10px;
-
-}
-
-header .header-menu a:hover {
-    font-weight: 600;
-    color: #ff5253;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
 }
 header .menu-btn {
-    font-weight: 600;
-    color: #ff5253;
-    cursor: pointer;
+  font-weight: 600;
+  color: #ff5253;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 2rem;
+  display: none;
+}
+
+.navigation {
+  display: none;
+}
+.about-container{
+  max-width: 615px;
+  flex: 0.65;
+
+}
+#about-section p {
+  line-height: 2.2;
+  font-size: 15px;
+}
+#about-section {
+  padding: 30px 0;
+  color: #282828;
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    width: 99%;
+  }
+  .img-wrapper {
+    flex: 0.25;
+    justify-content: flex-start;
+    display: flex;
+    margin: 20px;
+  }
+  .img-wrapper div {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    font-size: 2rem;
-    display: none;
-}
-
- .navigation{
-        display: none;
-    }
-#about-section .title{
-    font-size: 2.5rem;
-}
-#about-section p{
-    width: 70%;
-    margin: 0 auto;
-    line-height: 2;
-    font-size: 14px;
+  }
+  img {
+    border-radius: 50%;
+    border: 2px solid #2b2d42;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #2b2d42;
+  }
 }
 @media only screen and (max-width: 960px) {
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 85%;
+  }
+  #about-section p {
+    min-width: 90%;
+  }
+  .section-title {
+    width: 100%;
+    margin: 15px auto;
+  }
+  #portfolio-section .section-title {
+    text-align: center;
+  }
+  #portfolio-section .title {
+    margin-top: 0;
+  }
 }
 
 /* phones */
 
 @media only screen and (max-width: 767px) {
-    header .header-menu {
-        display: none;
-    }
-    .navigation{
-        display: block;
-    }
-    header .logo {
+  header {
+    margin: 15px;
+    justify-content: center;
+  }
+  header .header-menu a {
+    font-size: 0.75rem;
+  }
+  .navigation {
+    display: block;
+  }
+  header .logo {
     font-size: 1.3rem;
     padding: 10px 10px;
+    display: none;
+  }
+  .about-wrapper{
+    flex-direction: column;
+    padding: 10px
+  }
 }
-
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+  #contact-section {
+    width: 100%;
+    padding: 20px;
+  }
+  #experience-section .experience-container .info {
+    padding: 0;
+  }
+  #experience-section .experience-container .info .info-box {
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+  }
+  .info-box ul li {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .info-box h4 {
+    line-height: 1.5;
+  }
+  #about-section p {
+    font-size: 14px;
+  }
+  .portfolio-wrapper > div > div {
+    padding: 10px;
+  }
+  header {
+    padding: 20px;
+  }
 }

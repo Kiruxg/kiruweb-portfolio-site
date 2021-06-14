@@ -1,6 +1,5 @@
 #portfolion-section {
-  padding: 80px 15px;
-}
+  padding: 80px 15px; }
 
 #portfolio-section .title {
   position: relative;
@@ -10,17 +9,15 @@
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-  margin-top: 100px;
-  .section-title {
-    border-bottom: 0;
-  }
-}
-.project-title{
-  letter-spacing: 1px;
-}
-#portfolio-section h2{
-  width: auto;
-}
+  margin-top: 100px; }
+  #portfolio-section .title .section-title {
+    border-bottom: 0; }
+
+.project-title {
+  letter-spacing: 1px; }
+
+#portfolio-section h2 {
+  width: auto; }
 
 #portfolio-section .title .square {
   background: #ffeded;
@@ -28,15 +25,14 @@
   height: 125px;
   position: absolute;
   margin: 0 auto;
-  z-index: -1;
-}
+  z-index: -1; }
 
 .portfolio-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  > div {
+  gap: 10px; }
+  .portfolio-wrapper > div {
     margin: 10px;
     width: 340px;
     min-height: 564px;
@@ -45,47 +41,34 @@
     border-radius: 5px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     position: relative;
-    transition: transform 0.2s;
-    a {
+    transition: transform 0.2s; }
+    .portfolio-wrapper > div a {
       color: inherit;
-      margin-left: 27px;
-    }
-    > div {
-      padding: 15px;
-      p {
+      margin-left: 27px; }
+    .portfolio-wrapper > div > div {
+      padding: 15px; }
+      .portfolio-wrapper > div > div p {
         font-size: 0.8rem;
         font-family: "Nunito", sans-serif;
         font-weight: 400;
         line-height: 1.5;
-        letter-spacing: 0.00938em;
-      }
-      .text-secondary {
+        letter-spacing: 0.00938em; }
+      .portfolio-wrapper > div > div .text-secondary {
         margin: 30px auto 60px auto;
         color: rgba(0, 0, 0, 0.54);
-        text-align: center;
-      }
-    }
-    span {
+        text-align: center; }
+    .portfolio-wrapper > div span {
       position: absolute;
       right: 25px;
       bottom: 25px;
-      font-size: 20px;
-      > i {
+      font-size: 20px; }
+      .portfolio-wrapper > div span > i {
         font-size: 22px;
-        color: #90a4ae;
-      }
-    }
-  }
-  h4 {
-    margin-bottom: 20px;
-  }
-  img {
+        color: #90a4ae; }
+  .portfolio-wrapper h4 {
+    margin-bottom: 20px; }
+  .portfolio-wrapper img {
     width: 100%;
     object-fit: contain;
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  // .whatsapp-img {
-  //   height: 268px;
-  // }
-}
+    border-top-right-radius: 5px; }

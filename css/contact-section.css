@@ -1,0 +1,149 @@
+#contact-section {
+  padding: 100px 20px;
+  padding-top: 50px;
+  color: #282828;
+  background: #f9f8fc;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+  #contact-section .hello-btn {
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #90a4ae;
+    min-width: 64px;
+    line-height: 1.75;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; }
+    #contact-section .hello-btn > a {
+      font-size: 15px;
+      padding: 15px 30px;
+      line-height: 1.75;
+      border-radius: 4px;
+      letter-spacing: 0.02em;
+      color: #141618;
+      text-decoration: none; }
+  #contact-section .hello-btn:hover {
+    background-color: #647279; }
+  #contact-section .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    margin: 0 auto; }
+    #contact-section .contact-wrapper > * {
+      padding: 12px 0;
+      font-size: 15px;
+      line-height: 1.25; }
+    #contact-section .contact-wrapper h3 {
+      font-size: 2rem;
+      font-weight: 500; }
+    #contact-section .contact-wrapper p {
+      line-height: 1.5; }
+
+#contact-section .contact-title {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #282828;
+  text-align: left;
+  font-size: 1.8rem;
+  text-transform: none;
+  font-weight: 500; }
+
+#contact-section .blog-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  grid-gap: 15px;
+  overflow: hidden; }
+
+#contact-section .blog-container .post-img {
+  width: 100%;
+  height: 100%;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-color: #f2f3f5; }
+
+#contact-section .blog-container .post {
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out; }
+
+#contact-section .blog-container .details {
+  background: white;
+  padding: 25px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, -100px, 0);
+  transition: all 0.4s ease-in-out; }
+
+#contact-section .blog-container .details h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #13171a;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.8rem; }
+
+#contact-section .blog-container .details p {
+  font-weight: 400;
+  color: #919191;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 1rem; }
+
+#contact-section .blog-container .post .more {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: -20px;
+  padding: 0 35px 35px;
+  right: 0; }
+
+#contact-section .blog-container .post .more .button {
+  color: #16171b;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ff5253;
+  cursor: pointer;
+  width: 115px;
+  margin-top: 15px;
+  transition: all 0.4s ease-in-out 0.1s;
+  opacity: 0;
+  transform: translate3d(0, 20px, 0); }
+
+#contact-section .blog-container .post .more .button a {
+  color: #ff5253; }
+
+/*hover effect on post */
+#contact-section .blog-container .post:hover .details {
+  transform: translate3d(0, -500px, 0); }
+
+#contact-section .blog-container .post:hover .more .button {
+  opacity: 1;
+  color: #ff5253;
+  transform: translate3d(0, 0, 0); }
+
+/* tablets */
+@media only screen and (max-width: 960px) {
+  #contact-section .contact-wrapper {
+    width: 100%; } }
+
+/* phones */
+@media only screen and (max-width: 767px) {
+  #contact-section .contact-wrapper h3 {
+    font-size: 1.8rem; }
+  #contact-section .contact-wrapper p {
+    line-height: 1.8;
+    font-size: 14px; } }

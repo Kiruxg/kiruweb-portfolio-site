@@ -1,26 +1,22 @@
 #experience-section {
   padding: 80px 15px;
   padding-top: 30px;
-  margin: 50px auto;
-  ul {
+  margin: 50px auto; }
+  #experience-section ul {
     margin-left: 18px;
-    margin-top: 5px;
-  }
-}
+    margin-top: 5px; }
 
 .section-title {
-  color: rgb(22, 23, 27);
+  color: #16171b;
   font-weight: 900;
   font-size: 1.8rem;
   margin: 50px auto;
   width: 80%;
-  border-bottom: 1px solid #282828;
-}
+  border-bottom: 1px solid #282828; }
 
 #experience-section .experience-container {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 #experience-section .experience-container .large-icons .red-box {
   width: 230px;
@@ -37,32 +33,27 @@
   top: -150px;
   left: 100px;
   font-size: 0.8rem;
-  letter-spacing: 3px;
-}
+  letter-spacing: 3px; }
 
 #experience-section .experience-container .info {
   padding: 20px 0;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
 #experience-section .experience-container .info .info-box {
   padding: 15px;
   width: 70%;
-  margin: 0 auto;
-  .dark-gray {
+  margin: 0 auto; }
+  #experience-section .experience-container .info .info-box .dark-gray {
     color: #404040;
     font-weight: 400;
-    font-style: italic;
-  }
-}
+    font-style: italic; }
 
 #experience-section .experience-container .info .info-box .h4 {
   font-size: 1.2rem;
   color: #16171b;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 3px;
-}
+  letter-spacing: 3px; }
 
 #experience-section .experience-container .info .info-box .date {
   font-size: 0.8rem;
@@ -71,8 +62,7 @@
   letter-spacing: 1px;
   text-transform: capitalize;
   font-weight: 400;
-  display: block;
-}
+  display: block; }
 
 #experience-section .experience-container .info .info-box p,
 ul li {
@@ -81,25 +71,19 @@ ul li {
   letter-spacing: 1px;
   color: #16171b;
   padding: 4px 0;
-  list-style-type: disc;
-}
+  list-style-type: disc; }
+
 /* tablets */
 @media only screen and (max-width: 960px) {
   #experience-section {
     padding: 30px 5px;
-    margin: 10px auto;
-  }
-
+    margin: 10px auto; }
   #experience-section .experience-container {
-    grid-template-columns: 1fr;
-  }
+    grid-template-columns: 1fr; }
   #experience-section .experience-container .info .info-box {
-    width: 100%;
-  }
-}
+    width: 100%; } }
+
 /* phones */
 @media only screen and (max-width: 767px) {
   .section-title {
-    font-size: 1.8rem;
-  }
-}
+    font-size: 1.8rem; } }

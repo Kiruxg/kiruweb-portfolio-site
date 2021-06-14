@@ -1,14 +1,12 @@
 footer {
   background: #f9fafc;
-  padding: 60px 15px;
-}
+  padding: 60px 15px; }
 
 footer .social-container {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  max-width: 400px;
-}
+  max-width: 400px; }
 
 footer .social-container a {
   font-size: 3rem;
@@ -16,33 +14,27 @@ footer .social-container a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   display: inline-block;
-  padding: 10px;
-}
+  padding: 10px; }
 
 footer .social-container a:hover {
-  color: #0077b5;
-}
+  color: #0077b5; }
 
 footer h5 {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: black;
   margin: 20px 0;
-  text-align: center;
-}
+  text-align: center; }
 
 footer h6 {
   font-size: 0.9rem;
   text-transform: capitalize;
   color: black;
-  text-align: center;
-}
+  text-align: center; }
+
 /* tablets */
 @media only screen and (max-width: 960px) {
   .container {
-    width: 100%;
-  }
-}
+    width: 100%; } }
+
 /* phones */
-@media only screen and (max-width: 767px) {
-}

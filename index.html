@@ -2,436 +2,205 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scaleable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Kirubel Girma | Web Development, Design, Machine Learning</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VH3T6CZVW9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "G-VH3T6CZVW9")
+    </script>
+    <!-- Hotjar Tracking Code for kiruweb.com -->
+    <script>
+      ;(function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            ;(h.hj.q = h.hj.q || []).push(arguments)
+          }
+        h._hjSettings = { hjid: 2405709, hjsv: 6 }
+        a = o.getElementsByTagName("head")[0]
+        r = o.createElement("script")
+        r.async = 1
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
+        a.appendChild(r)
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=")
+    </script>
+    <title>Kirubel Girma | Front End JavaScript Developer</title>
   </head>
 
   <body>
     <header>
-      <div class="logo">
-        <a href="index.html" class="name">
-          Kiru
-        </a>
-      </div>
+      <div class="logo"></div>
       <div class="header-menu">
-        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
         <a href="#portfolio-section">Portfolio</a>
         <a href="#experience-section">Experience</a>
-        <a href="#blog-section">Blog</a>
+        <a href="#contact-section">Contact</a>
       </div>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
       </div>
     </header>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="index.html" class="navigation__link"
-              ><span>01</span>Home</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="#services-section" class="navigation__link"
-              ><span>02</span>Services</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="#portfolio-section" class="navigation__link"
-              ><span>03</span>Portfolio</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="#experience-section" class="navigation__link"
-              ><span>04</span>Experience</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="#blog-section" class="navigation__link"
-              ><span>05</span>Blog</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
     <main class="container">
       <section id="top">
-        <div class="img">
-          <div class="background-img">
-            <img src="img/profilepic1.jpg" alt="" />
-          </div>
-        </div>
         <div class="info">
           <div class="blue-square"></div>
+          <div class="rhombus step2"></div>
           <h1>Kirubel Girma</h1>
-          <p>I'm a web developer and designer.</p>
+          <p>Front End Developer based in Riverside, California.</p>
           <a href="#portfolio-section">Latest Works</a>
         </div>
       </section>
-      <section id="about-section">
-        <h1 class="title">About me</h1>
-        <p style="margin-bottom: 30px;">
-          I pursue a multi-faceted discipline aiming to grow my skillset in web
-          development and User Experience. I am a student at the University of
-          California San Diego, where I study HCI/User Experience. I am most
-          passionate for front-end web development and utilizing the design
-          process to develop instinctive web applications for my audience.
-        </p>
-      </section>
-      <section id="portfolio-section">
-        <div class="title">
-          <div class="square"></div>
-          <h1>Portfolio</h1>
-        </div>
-        <div class="container">
-          <div class="titled">Photospace - Freelance</div>
-          <div class="subsection">
-            This web application serves to connect professional photographers to
-            clients looking for quality prints.
+      <div class="background">
+        <section id="about-section">
+          <h1 class="section-title">Front-end Focused</h1>
+          <div class="about-wrapper">
+            <div class="img-wrapper">
+              <div><img src="img/profilepic.jpg" alt="profile" /></div>
+            </div>
+            <div class="about-container">
+              <p>
+                Hello! I’m Kirubel and I design and deploy products for the web. I’ve graduated from the Cognitive Science Program at UC San Diego with a major in Human Computer Interaction. During my time there, I’ve studied core UI/UX principles which have been complementary to a self-taught curriculum of web technologies and standards.
+                <br />
+                I am continuously learning and looking for opportunities to strengthen my skill set and grow as a developer.
+              </p>
+            </div>
           </div>
-          <img src="img/photospacecover.PNG" alt="Photospace Cover" />
-          <a href="portfolio/project8.html">See More</a>
-        </div>
-        <div class="container">
-          <div class="titled">BabyVice - Class Project</div>
-          <div class="subsection">
-            Being a parent can be a challenge and keeping up on their baby’s
-            developmental stages is a priority for most. I worked in a team to
-            design a platform where parents can gain insight into their baby’s
-            maturation process.
-          </div>
-          <img
-            id="babyvice"
-            src="img/babyvicecover.PNG"
-            alt="Photospace Cover"
-          />
-          <a href="portfolio/project9.html">See More</a>
-        </div>
-      </section>
-
-      <!---
-      <section id="portfolio-section">
-        <div class="container">
+        </section>
+        <section id="portfolio-section">
           <div class="title">
             <div class="square"></div>
-            <h1>Portfolio</h1>
-          </div>
-          <div class="portfolio-container">
-            <a
-              target="_blank"
-              href="portfolio/project1.html"
-              class="box image1"
-            >
-              <div class="image">
-                <div class="hover-bg">
-                  <div class="title">
-                    <div class="text">Trillo</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              href="portfolio/project2.html"
-              class="box image2"
-            >
-              <div class="image">
-                <div class="hover-bg">
-                  <div class="title">
-                    <div class="text">Golden Catalog</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              href="portfolio/project3.html"
-              class="box image3"
-            >
-              <div class="image">
-                <div class="hover-bg">
-                  <div class="title">
-                    <div class="text">HTML Emails</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              href="portfolio/project4.html"
-              class="box image4"
-            >
-              <div class="image">
-                <div class="hover-bg">
-                  <div class="title">
-                    <div class="text">Travel Website</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              href="portfolio/project5.html"
-              class="box image5"
-            >
-              <div class="image">
-                <div class="hover-bg">
-                  <div class="title">
-                    <div class="text">Real Estate</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              href="portfolio/project6.html"
-              class="box image6"
-            >
-              <div class="image">
-                <div class="hover-bg">
-                  <div class="title">
-                    <div class="text">Facebook Static</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              href="portfolio/project7.html"
-              class="box image7"
-            >
-              <div class="image">
-                <div class="hover-bg">
-                  <div class="title">
-                    <div class="text">UX Case Study</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
 
-    -->
-      <section id="experience-section">
-        <div class="container">
-          <div class="large-title">
-            Experience
+            <h2 class="section-title">
+              <div class="project-title">Portfolio</div>
+            </h2>
           </div>
-          <div class="experience-container">
-            <div class="large-icons">
-              <div class="square">
-                <div class="blue-box">
-                  Web Dev
-                </div>
-              </div>
-              <div class="white-box">
-                <div class="circle">Design</div>
-              </div>
-
-              <div class="red-box">
-                <div class="triangle">
-                  Machine Learning
-                </div>
+          <section class="portfolio-wrapper">
+            <div>
+              <img src="img/amazon-portfolio.png" alt="amazon-portfolio" />
+              <div>
+                <h4>Amazon Clone</h4>
+                <p>A web application to process orders. The front-end utilizes React and Context API to track user and basket data. Order information is saved in the Firebase Cloud database.</p>
+                <p class="text-secondary">React, Context API, Firebase Cloud Functions, Stripe API, React Router, Axios, JavaScript, HTML, CSS</p>
+                <span>
+                  <a target="_blank" href="https://amazon.kiruweb.com/"><i class="fas fa-external-link-alt"></i></a>
+                  <a target="_blank" href="https://github.com/Kiruxg/Amazon-Fullstack"><i class="fab fa-github"></i></a>
+                </span>
               </div>
             </div>
-            <div class="info">
-              <div class="info-box">
-                <h4>Web Developer / Front End Designer - Petco</h4>
-                <span class="date">June 2018 - September 2018</span>
-                <p>
-                  Collaborated alongside the ecommerce team to develop a gift
-                  registry platform given the out-of-the-box solutions from
-                  WebSphere Commerce Suite.
-                </p>
-                <p>
-                  Delivered wireframes and mockups in front-end projects for
-                  petco.com Learned the use of JavaServer pages and its role in
-                  delivering dynamic markup content from the servers.
-                </p>
-              </div>
-              <div class="info-box">
-                <h4>Board Member - Design Outreach Committee</h4>
-                <span class="date">June 2016 - Present</span>
-                <p>
-                  Foster and maintain existing relationships between Design @
-                  UCSD and other organizations on campus and plan events to
-                  educate the community about the role of design in many
-                  aspects.
-                </p>
+            <div>
+              <img src="img/traveltoursheroimg.jpg" alt="traveltours-portfolio" />
+              <div>
+                <h4>Travel Tours Landing Page</h4>
+                <p>A modern landing page created using HTML, CSS, along with SASS. This website promotes the services of a travel company while maintaining a consistent user interface for the brand.</p>
+                <p class="text-secondary">HTML, CSS, SASS</p>
+                <span>
+                  <a target="_blank" href="http://traveltours.kiruweb.com/"><i class="fas fa-external-link-alt"></i></a>
+                  <a target="_blank" href="https://github.com/Kiruxg/Travel-Tours-Landing-Page"><i class="fab fa-github"></i></a>
+                </span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="blog-section">
-        <div class="container">
-          <div class="large-title">
-            <div>Blog</div>
-          </div>
-          <div class="blog-container">
-            <a
-              target="_blank"
-              href="https://medium.com/@kirubelgirma0/a-day-in-the-life-of-a-web-developer-intern-61c0aa37d14f"
-              class="post"
-            >
-              <div
-                class="post-img"
-                style="background: url('img/dayinthelifeimage.png');"
-              ></div>
-              <div class="details">
-                <h4>a day in the life (of a web developer intern)</h4>
-                <p>
-                  My mornings are a time for me to capitalize on my learning. I
-                  made it a habit to watch short 30mins snippets of a course I
-                  bought on Udemy. I used to learn outside of work after I come
-                  back home at 6pm. Due to my lack of energy on most days,
-                  delegating time in the morning to learn was beneficial to my
-                  well-being.
-                </p>
-                <p>
-                  Even during the long 20-mile commute to work, I utilize it to
-                  listen to a podcast about web development called Syntax (link
-                  plug). Tuning in to a podcast gives you the ability to get at
-                  your niche from the perspective of another individual.
-                </p>
-                <div class="more">
-                  <div class="button">
-                    Read More
-                  </div>
-                </div>
+            <div>
+              <img class="whatsapp-img" src="img/whatsapp-portfolio.png" alt="whatsapp-portfolio" />
+              <div>
+                <h4>WhatsApp Web Clone</h4>
+                <p>A realtime chat messaging web app. Authenticated users can create rooms and engage in conversation.</p>
+                <p class="text-secondary">React, Context API, Material-UI, Firebase Authentication, Express, MongoDB, Pusher, JavaScript, HTML, CSS</p>
+                <span>
+                  <a target="_blank" href="https://whatsapp.kiruweb.com/"><i class="fas fa-external-link-alt"></i></a>
+                  <a target="_blank" href="https://github.com/Kiruxg/Whatsapp-web-app-with-React"><i class="fab fa-github"></i></a>
+                </span>
               </div>
-            </a>
-            <a
-              target="_blank"
-              href="https://medium.com/@kirubelgirma0/how-i-broke-into-the-web-development-niche-93357196a9e7"
-              class="post"
-            >
-              <div
-                class="post-img"
-                style="background: url('img/htmlbook.jpeg');"
-              ></div>
-              <div class="details">
-                <h4>How I broke into the Web Development niche</h4>
-                <p>
-                  The web development niche can really be intimidating for some.
-                  Our own limiting beliefs and self-doubt prevents us from
-                  visualizing our goals come to fruition. My first primer into
-                  coding was with the HTML5 and CSS3 for dummies book I had
-                  purchased 4 years ago.
-                </p>
-                <p>
-                  I never took it seriously at this point.. I just slapped on
-                  some div and audio tags, made a quirky little video popup and
-                  called it a day. Never got back to that file again. I took it
-                  as more of a hobby than an actual career… Can’t blame my 15
-                  year old self.
-                </p>
-                <div class="more">
-                  <div class="button">
-                    Read More
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              href="https://medium.com/@kirubelgirma0/html5-form-validation-and-you-b9bc557875d0"
-              class="post"
-            >
-              <div
-                class="post-img"
-                style="background: url('img/a%20day%20in%20the%20life.png');"
-              ></div>
-              <div class="details">
-                <h4>How I broke into the Web Development niche</h4>
-                <p>
-                  Front-end and back-end validation. If you are dealing with
-                  production level code, you are going to have to do both of
-                  these. Front-end validation deals with constraining input
-                  values to show the user what they need to type in. Even back
-                  end validation is crucial because there might be edge cases or
-                  bugs in how we set up our front end validation or even worse,
-                  the user has turned off their JavaScript for the page.
-                </p>
-                <p>
-                  Once code is submitted, the back-end checks the form and
-                  either sends the validated form to the database or sends back
-                  an error to the front end for the user to see.
-                </p>
-                <div class="more">
-                  <div class="button">
-                    Read More
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!--
-        <section id="testimonials-section">
-            <div class="container">
-                <div class="title">
-                    <div class="square"></div>
-                    <h1>Testimonial</h1>
-                </div>
-                <div class="testimonials-container">
-                    <div class="test-center">
-                        <div class="header">
-                            <div class="user-img">
-                                <img src="https://d3iw72m71ie81c.cloudfront.net/male-30.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <h4>Raul Rodriguez</h4>
-                                <span>CEO, Nike</span>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facere voluptate expedita sequi distinctio, odit, deleniti optio officiis sapiente rem fugiat non architecto temporibus quod cum, assumenda soluta? Minima, quo.</p>
-                    </div>
-                </div>
             </div>
-
+            <div>
+              <img src="img/videowebchatheroimg.jpg" alt="videowebchat-portfolio" />
+              <div>
+                <h4>Video Webchat</h4>
+                <p>A realtime video conferencing Nodejs app. User can create or join existing rooms to communicate through video and chat messaging.</p>
+                <p class="text-secondary">Nodejs, Express, Socket.IO, PeerJS, Embedded JavaScript Templates</p>
+                <span>
+                  <a target="_blank" href="https://video-webchat.kiruweb.com"><i class="fas fa-external-link-alt"></i></a>
+                  <a target="_blank" href="https://github.com/Kiruxg/Video-Chat-App-with-NodeJS"><i class="fab fa-github"></i></a>
+                </span>
+              </div>
+            </div>
+            <div>
+              <img src="img/classifieds-portfolio.png" alt="classifieds-portfolio" />
+              <div>
+                <h4>Classifieds Ad Listing Platform</h4>
+                <p>A web app for university students to share local events. Features CRUD functionality so students can fully interact with their listing.</p>
+                <p class="text-secondary">React, Material-UI, Firebase Realtime Database, React Router, JavaScript, HTML, CSS</p>
+                <span>
+                  <a target="_blank" href="https://classifieds-platform.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                  <a target="_blank" href="https://github.com/Kiruxg/classifieds-platform"><i class="fab fa-github"></i></a>
+                </span>
+              </div>
+            </div>
+            <div>
+              <img src="img/heroemail.png" alt="classifieds-portfolio" />
+              <div>
+                <h4>Hero Watch HTML Email</h4>
+                <p>An email template to market a new smartwatch.</p>
+                <p class="text-secondary">HTML, CSS</p>
+                <span>
+                  <a target="_blank" href="https://herowatch.kiruweb.com/"><i class="fas fa-external-link-alt"></i></a>
+                  <a target="_blank" href="https://github.com/Kiruxg/html_email"><i class="fab fa-github"></i></a>
+                </span>
+              </div>
+            </div>
+          </section>
         </section>
--->
+        <section id="experience-section">
+          <div class="container">
+            <div class="section-title">Experience</div>
+            <div class="experience-container">
+              <div class="info">
+                <div class="info-box">
+                  <h4>Front End UI/UX Developer Intern <span class="dark-gray">@ Petco</span></h4>
+                  <span class="date">June 2018 - August 2018</span>
+                  <ul>
+                    <li>Created wireframes and mockups of a gift registry UI using HTML and CSS for the Petco.com ecommerce team.</li>
+                    <li>Learned JavaServer Pages (JSP) and utilized the WebSphere Commerce Suite to deliver server-side dynamic markup content.</li>
+                    <li>Followed Agile (Scrum) best practices by engaging in daily stand-ups, code reviews, and sprint planning.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact-section">
+          <div class="container">
+            <div class="contact-title">
+              <div>Contact</div>
+            </div>
+            <div class="contact-wrapper">
+              <h3>Get In Touch</h3>
+              <p>Whether you have a question or just want to say hi, my inbox is always open. I'll try my best to get back to you as soon as possible!</p>
+              <div class="hello-btn">
+                <a href="mailto:kirubelgirma0@gmail.com">Say Hello!</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="social-container">
-        <a href="#">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="#">
+        <a target=" " href="https://www.linkedin.com/in/kirubelgirma/">
           <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-medium"></i>
         </a>
       </div>
       <h5>Kirubel Girma</h5>
-      <h6>Web Developer | Designer | Machine Learning</h6>
+      <h6>Front End Developer</h6>
     </footer>
   </body>
 </html>
