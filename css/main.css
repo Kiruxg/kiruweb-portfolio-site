@@ -182,7 +182,8 @@
       .portfolio-wrapper > div > div .text-secondary {
         margin: 30px auto 60px auto;
         color: rgba(0, 0, 0, 0.54);
-        text-align: center; }
+        text-align: center;
+        min-height: 0px; }
     .portfolio-wrapper > div span {
       position: absolute;
       right: 25px;
