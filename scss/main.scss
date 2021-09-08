@@ -57,7 +57,7 @@ header .header-menu a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 header .menu-btn {
   font-weight: 600;
@@ -74,10 +74,9 @@ header .menu-btn {
 .navigation {
   display: none;
 }
-.about-container{
+.about-container {
   max-width: 615px;
   flex: 0.65;
-
 }
 #about-section p {
   line-height: 2.2;
@@ -95,10 +94,10 @@ header .menu-btn {
     width: 99%;
   }
   .img-wrapper {
-    flex: 0.25;
-    justify-content: flex-start;
+    flex: 0.15;
     display: flex;
     margin: 20px;
+    margin-top: 0;
   }
   .img-wrapper div {
     display: flex;
@@ -107,9 +106,8 @@ header .menu-btn {
   }
   img {
     border-radius: 50%;
-    border: 2px solid #2b2d42;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     background-color: #2b2d42;
   }
@@ -151,9 +149,9 @@ header .menu-btn {
     padding: 10px 10px;
     display: none;
   }
-  .about-wrapper{
+  .about-wrapper {
     flex-direction: column;
-    padding: 10px
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 500px) {
